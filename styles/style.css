@@ -224,9 +224,13 @@
 
 /* Estilos banner main */
 
+@keyframes bannerAnimation {
+    from {background-image: url("../media/banner.jpg");}
+    to {background-image: url("../media/banner5.jpg")}
+  }
 
 .mainBanner {
-    background-image: url("../media/banner.jpg");
+    
     height: 31.25em;
     background-attachment: fixed;
     background-position: center;
@@ -234,6 +238,11 @@
     background-size: cover;
     padding: 3.125em 1.875em;
     margin-bottom: 1.25em;
+    animation-name: bannerAnimation;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
 }
 
 .mobileBanner {
